@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import toast from "react-hot-toast";
 import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
+import Loader from "./Loader";
 
 const Proudct = () => {
   const [loading, setLoading] = useState(true);
@@ -42,7 +43,7 @@ const Proudct = () => {
 
   return (
     <>
-    { loading ? "loading" : <>
+    { loading ? <Loader/> : <>
     
     
     <nav className=" flex flex-wrap gap-8 items-center justify-center m-10">
