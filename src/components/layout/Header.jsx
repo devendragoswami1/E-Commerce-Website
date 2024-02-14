@@ -34,7 +34,7 @@ const Header = () => {
     return (
       <>
         <div
-          className={`fixed top-0 right-0 z-50 w-full max-w-[280px] h-screen bg-gray-900 text-gray-200 dark:bg-gray-800 dark:text-gray-300 overflow-y-auto transform transition duration-300 ease-in-out ${
+          className={`fixed top-0 right-0 z-50 w-full max-w-[280px] h-screen bg-white  text-gray-700  dark:text-gray-300 overflow-y-auto transform transition duration-300 ease-in-out ${
             isOpen ? "translate-x-0" : "-translate-x-full"
           }`}>
           <div className="flex items-center justify-between px-4 py-3">
@@ -51,24 +51,24 @@ const Header = () => {
           <div className="px-4 pt-4 pb-10 space-y-2">
             <Link
               to="/"
-              className={`block px-4 py-2 rounded-md font-medium text-left `}>
+              className={`block px-4 py-2 rounded-lg font-medium text-left hover:bg-neutral-200 transition-all duration-200  `}>
               Home
             </Link>
             <Link
               to={`/cart`}
-              className={`block px-4 py-2 rounded-md font-medium text-left 
+              className={`block px-4 py-2 rounded-md font-medium text-left hover:bg-neutral-200 transition-all duration-200
             `}>
               Cart
             </Link>
 
             <Link
               to="/products"
-              className="block px-4 py-2 rounded-md font-medium text-left">
+              className="block  hover:bg-neutral-200 transition-all duration-200 px-4 py-2 rounded-md font-medium text-left">
               All Products
             </Link>
             <Link
               to="/contact"
-              className="block px-4 py-2 rounded-md font-medium text-left">
+              className="block hover:bg-neutral-200 transition-all duration-200 px-4 py-2 rounded-md font-medium text-left">
               Contact Us
             </Link>
           </div>
