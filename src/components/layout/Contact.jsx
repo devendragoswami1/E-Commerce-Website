@@ -16,7 +16,7 @@ function Contact() {
                     <input className="placeholder:text-gray-600 block px-2 py-2 sm:border-b-2  w-full border-2 rounded-lg  border-gray-400 border-b-0 sm:w-[46%] sm:inline-block" type="text" placeholder="Name" />
                     <input className="placeholder:text-gray-600 block px-2 py-2 w-full border-2 rounded-lg border-gray-400 sm:w-[46%] sm:inline-block sm:float-right" type="emil" placeholder="Email"/>
                     <input className="placeholder:text-gray-600 block px-2 py-2 my-4 w-full border-2 border-gray-400" type="text" placeholder="Message" />
-                    <button className="uppercase text-white bg-black px-3 py-1 text-base ml-96 rounded-sm">send</button>
+                    <button className="uppercase text-white bg-black px-3 py-1 text-base ml-96 rounded-sm" onclick={ (e) => e.preventDefault()} >send</button>
                 </form>
             </div>
         </div>
